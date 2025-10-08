@@ -1,12 +1,14 @@
-[gd_scene load_steps=52 format=3 uid="uid://bm07kfvhuwoc4"]
+[gd_scene load_steps=54 format=3 uid="uid://4ef2stfeabb8"]
 
-[ext_resource type="Script" uid="uid://5u445832hqm1" path="res://scripts/player.gd" id="1_1jxqw"]
+[ext_resource type="Script" uid="uid://bwbis6b3jjsmm" path="res://scripts/player.gd" id="1_1jxqw"]
 [ext_resource type="Texture2D" uid="uid://bmr6hk3am2006" path="res://recouces/assets/spritesheets/knight/_Attack2.png" id="2_dw050"]
 [ext_resource type="Texture2D" uid="uid://2kpgr6hiqvny" path="res://recouces/assets/spritesheets/knight/_Attack.png" id="3_b26j0"]
 [ext_resource type="Texture2D" uid="uid://bn6hds4iqg215" path="res://recouces/assets/spritesheets/knight/_Dash.png" id="4_n7ghd"]
 [ext_resource type="Texture2D" uid="uid://ctgcmlk2g0qxw" path="res://recouces/assets/spritesheets/knight/_Idle.png" id="5_nvl01"]
 [ext_resource type="Texture2D" uid="uid://p2w5ggb873nv" path="res://recouces/assets/spritesheets/knight/_TurnAround.png" id="6_ivps1"]
 [ext_resource type="Texture2D" uid="uid://cyh35iuyx0udd" path="res://recouces/assets/spritesheets/knight/_Run.png" id="7_urp6f"]
+[ext_resource type="Script" uid="uid://bbrrguvcmqmcs" path="res://scenes/sword_1.gd" id="8_ur7pv"]
+[ext_resource type="Script" uid="uid://f3pdkrhyt4ih" path="res://scenes/sword_2.gd" id="9_y4r1p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hh0fu"]
 size = Vector2(18.5, 15)
@@ -341,6 +343,7 @@ shape = SubResource("RectangleShape2D_fjrip")
 visible = false
 collision_layer = 5
 collision_mask = 5
+script = ExtResource("8_ur7pv")
 
 [node name="recttop" type="CollisionShape2D" parent="sword_1"]
 position = Vector2(26.5, -29)
@@ -354,6 +357,7 @@ shape = SubResource("RectangleShape2D_d2wvv")
 visible = false
 collision_layer = 4
 collision_mask = 4
+script = ExtResource("9_y4r1p")
 
 [node name="circle2" type="CollisionShape2D" parent="sword_2"]
 position = Vector2(37, -19)
@@ -374,9 +378,6 @@ metadata/_edit_use_anchors_ = true
 
 [node name="attack_cooldown" type="Timer" parent="."]
 wait_time = 0.5
-
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2.5, 2.5)
 
 [connection signal="body_entered" from="hurtbox" to="." method="_on_hurtbox_body_entered"]
 [connection signal="body_exited" from="hurtbox" to="." method="_on_hurtbox_body_exited"]

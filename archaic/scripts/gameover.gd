@@ -1,4 +1,4 @@
-extends CanvasLayer
+class_name GameOver extends CanvasLayer
 
 @onready var score: Label = %score
 @onready var highscore: Label = %highscore
@@ -6,7 +6,13 @@ extends CanvasLayer
 @onready var quit: Button = %quit
 
 func set_score(n:int):
-	score.text = "final score" + str(n)
+	score.text = "Final Score: " + str(n)
+	if n > Global.save_dataarchaic.high_score:
+		highscore.visible = true
+		Global.save_dataarchaic.high_score = n
+		Global.save_dataarchaic.save()
+	else:
+		highscore.visible = false
 
 func _on_restart_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/start.tscn")
@@ -14,4 +20,4 @@ func _on_restart_pressed() -> void:
 
 
 func _on_quit_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().quit()
