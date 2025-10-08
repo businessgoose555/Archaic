@@ -18,7 +18,7 @@ func small_enemy():
 func _physics_process(delta: float) -> void:
 	fireball_attack()
 	sword_attack()
-	if player_chase:
+	if player_chase and is_instance_valid(player):
 		var direction = (player.position - position).normalized()
 		velocity = (direction*speed)
 		

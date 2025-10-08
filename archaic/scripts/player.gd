@@ -39,6 +39,9 @@ var dash_velocity: Vector2 = Vector2.ZERO
 
 func player():
 	pass
+const gameover_scene:PackedScene = preload("res://scenes/gameover.tscn")
+var gameover_menu:GameOver 
+
 
 func _ready():
 	healthbar.value = health
@@ -87,11 +90,11 @@ func _physics_process(delta):
 	if health <= 0:
 		player_alive = false
 		speed = 0
-		self.queue_free()
-		#if not gameover_menu:
-			#gameover_menu = gameover_scene.instantiate() as GameOver
-			#add_child(gameover_menu)
-			#gameover_menu.set_score(score)
+		if not gameover_menu:
+			gameover_menu = gameover_scene.instantiate() as GameOver
+			add_child(gameover_menu)
+			gameover_menu.set_score(Global.score)
+	
 
 func play_anim(movement):
 	var dir = current_dir

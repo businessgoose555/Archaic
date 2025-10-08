@@ -53,6 +53,7 @@ func sword_attack():
 		healthbar.value = enemy_health
 		print (enemy_health)
 		if enemy_health <= 0:
+			Global.score += 100
 			self.queue_free()
 
 func fireball_attack(): 
@@ -63,6 +64,7 @@ func fireball_attack():
 		healthbar.value = enemy_health
 		print (enemy_health)
 		if enemy_health <= 0:
+			Global.score += 100
 			self.queue_free()
 
 func _on_attack_cooldown_timeout() -> void:
