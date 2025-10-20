@@ -74,6 +74,8 @@ size = Vector2(11, 10.5)
 size = Vector2(8.75, 9.625)
 
 [node name="imp" type="CharacterBody2D"]
+z_index = 1
+y_sort_enabled = true
 script = ExtResource("1_65clq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
