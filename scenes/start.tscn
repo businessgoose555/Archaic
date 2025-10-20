@@ -1,0 +1,101 @@
+[gd_scene load_steps=6 format=3 uid="uid://br7rkkiyu6xry"]
+
+[ext_resource type="Script" uid="uid://cspdhcbbb8wfx" path="res://scripts/start.gd" id="1_jaeev"]
+[ext_resource type="Texture2D" uid="uid://02605xeleu7p" path="res://resources/assets/clouds.png" id="2_0auqf"]
+[ext_resource type="Texture2D" uid="uid://0haqapp6jd2v" path="res://resources/assets/town.png" id="3_y16t7"]
+[ext_resource type="FontFile" uid="uid://bmmvol7yj8bh0" path="res://resources/fonts/DungeonFont.ttf" id="4_4ge6i"]
+[ext_resource type="FontFile" uid="uid://bal6o2dt534cu" path="res://resources/fonts/BECKETT_.TTF" id="5_8itgj"]
+
+[node name="start" type="CanvasLayer"]
+script = ExtResource("1_jaeev")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Clouds" type="Sprite2D" parent="Panel"]
+modulate = Color(0.605274, 0.605274, 0.605274, 1)
+position = Vector2(574, 326)
+scale = Vector2(4.66313, 4.00742)
+texture = ExtResource("2_0auqf")
+
+[node name="Town" type="Sprite2D" parent="Panel"]
+modulate = Color(0.458405, 0.458405, 0.458405, 1)
+position = Vector2(574, 314)
+scale = Vector2(4.47187, 3.73127)
+texture = ExtResource("3_y16t7")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="highscore" type="Label" parent="Panel/HBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_4ge6i")
+theme_override_font_sizes/font_size = 30
+text = "highscore:"
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 25
+
+[node name="GridContainer" type="GridContainer" parent="Panel/HBoxContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+columns = 2
+
+[node name="start" type="Button" parent="Panel/HBoxContainer/VBoxContainer/MarginContainer/GridContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_4ge6i")
+theme_override_font_sizes/font_size = 25
+text = "start"
+
+[node name="quit" type="Button" parent="Panel/HBoxContainer/VBoxContainer/MarginContainer/GridContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_4ge6i")
+theme_override_font_sizes/font_size = 25
+text = "quit"
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 2.0
+offset_top = -230.0
+offset_right = 2.0
+offset_bottom = -87.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.0392157, 0.0980392, 0.0941176, 1)
+theme_override_colors/font_shadow_color = Color(0.141176, 0.152941, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.649293, 0.568375, 0.385935, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("5_8itgj")
+theme_override_font_sizes/font_size = 150
+text = "Archaic"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Panel/HBoxContainer/VBoxContainer/MarginContainer/GridContainer/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Panel/HBoxContainer/VBoxContainer/MarginContainer/GridContainer/quit" to="." method="_on_quit_pressed"]
