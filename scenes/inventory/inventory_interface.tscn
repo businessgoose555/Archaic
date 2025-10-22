@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxpqu0ralhf4q"]
+
+[ext_resource type="Script" uid="uid://dcrhecwa8oxeq" path="res://scenes/inventory/inventory_interface.gd" id="1_yshua"]
+
+[node name="InventoryInterface" type="CanvasLayer"]
+script = ExtResource("1_yshua")
+
+[node name="SlotsContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(24, 24)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -12.0
+offset_top = -31.0
+offset_right = 12.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 4
+
+[node name="Draggeditem" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(24, 24)
+offset_right = 24.0
+offset_bottom = 24.0
+mouse_filter = 2
+expand_mode = 3
+stretch_mode = 5
