@@ -1,12 +1,12 @@
 [gd_scene load_steps=53 format=3 uid="uid://bm07kfvhuwoc4"]
 
 [ext_resource type="Script" uid="uid://5u445832hqm1" path="res://scripts/player.gd" id="1_1jxqw"]
-[ext_resource type="Texture2D" uid="uid://bmr6hk3am2006" path="res://recouces/assets/spritesheets/knight/_Attack2.png" id="2_dw050"]
-[ext_resource type="Texture2D" uid="uid://2kpgr6hiqvny" path="res://recouces/assets/spritesheets/knight/_Attack.png" id="3_b26j0"]
-[ext_resource type="Texture2D" uid="uid://bn6hds4iqg215" path="res://recouces/assets/spritesheets/knight/_Dash.png" id="4_n7ghd"]
-[ext_resource type="Texture2D" uid="uid://ctgcmlk2g0qxw" path="res://recouces/assets/spritesheets/knight/_Idle.png" id="5_nvl01"]
-[ext_resource type="Texture2D" uid="uid://p2w5ggb873nv" path="res://recouces/assets/spritesheets/knight/_TurnAround.png" id="6_ivps1"]
-[ext_resource type="Texture2D" uid="uid://cyh35iuyx0udd" path="res://recouces/assets/spritesheets/knight/_Run.png" id="7_urp6f"]
+[ext_resource type="Texture2D" uid="uid://bmr6hk3am2006" path="res://resources/assets/spritesheets/knight/_Attack2.png" id="2_dw050"]
+[ext_resource type="Texture2D" uid="uid://2kpgr6hiqvny" path="res://resources/assets/spritesheets/knight/_Attack.png" id="3_b26j0"]
+[ext_resource type="Texture2D" uid="uid://bn6hds4iqg215" path="res://resources/assets/spritesheets/knight/_Dash.png" id="4_n7ghd"]
+[ext_resource type="Texture2D" uid="uid://ctgcmlk2g0qxw" path="res://resources/assets/spritesheets/knight/_Idle.png" id="5_nvl01"]
+[ext_resource type="Texture2D" uid="uid://p2w5ggb873nv" path="res://resources/assets/spritesheets/knight/_TurnAround.png" id="6_ivps1"]
+[ext_resource type="Texture2D" uid="uid://cyh35iuyx0udd" path="res://resources/assets/spritesheets/knight/_Run.png" id="7_urp6f"]
 [ext_resource type="Script" uid="uid://c8g7tyflssi06" path="res://scripts/playermanager.gd" id="8_smehm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hh0fu"]

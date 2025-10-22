@@ -1,7 +1,7 @@
 [gd_scene load_steps=29 format=3 uid="uid://bkg6i5dfi5hxt"]
 
 [ext_resource type="Script" uid="uid://ba44syui3r7il" path="res://scripts/fireball.gd" id="1_1gl40"]
-[ext_resource type="Texture2D" uid="uid://bg012r0ek0dbw" path="res://recouces/assets/fireball_all_anim.png" id="2_cb14k"]
+[ext_resource type="Texture2D" uid="uid://bg012r0ek0dbw" path="res://resources/assets/fireball_all_anim.png" id="2_cb14k"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7kba2"]
 atlas = ExtResource("2_cb14k")

@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://bg2ts3cwkuqp6"]
 
 [ext_resource type="Script" uid="uid://cm5eral60b6je" path="res://scripts/gameover.gd" id="1_ncp31"]
-[ext_resource type="FontFile" uid="uid://bal6o2dt534cu" path="res://recouces/fonts/BECKETT_.TTF" id="2_h8i2o"]
-[ext_resource type="FontFile" uid="uid://bmmvol7yj8bh0" path="res://recouces/fonts/DungeonFont.ttf" id="3_mt7yr"]
-[ext_resource type="Texture2D" uid="uid://b6k1iljkus2u4" path="res://recouces/assets/grave_background_update.png" id="4_qwp2v"]
+[ext_resource type="FontFile" uid="uid://bal6o2dt534cu" path="res://resources/fonts/BECKETT_.TTF" id="2_h8i2o"]
+[ext_resource type="FontFile" uid="uid://bmmvol7yj8bh0" path="res://resources/fonts/DungeonFont.ttf" id="3_mt7yr"]
+[ext_resource type="Texture2D" uid="uid://b6k1iljkus2u4" path="res://resources/assets/grave_background_update.png" id="4_qwp2v"]
 
 [node name="game over" type="CanvasLayer"]
 process_mode = 3

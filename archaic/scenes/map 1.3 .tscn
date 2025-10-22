@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=4 uid="uid://fvnbsv7rn28u"]
 
-[ext_resource type="Texture2D" uid="uid://bko3vhx5jvdr0" path="res://recouces/assets/tileset/Tilset-Ruins_2.png" id="1_4g53b"]
-[ext_resource type="Texture2D" uid="uid://daju07ojkgirr" path="res://recouces/assets/tileset/Tilset-Ruins_2 2.png" id="2_yyaos"]
+[ext_resource type="Texture2D" uid="uid://bko3vhx5jvdr0" path="res://resources/assets/tileset/Tilset-Ruins_2.png" id="1_4g53b"]
+[ext_resource type="Texture2D" uid="uid://daju07ojkgirr" path="res://resources/assets/tileset/Tilset-Ruins_2 2.png" id="2_yyaos"]
 [ext_resource type="PackedScene" uid="uid://bm07kfvhuwoc4" path="res://scenes/player.tscn" id="3_17owp"]
 [ext_resource type="PackedScene" uid="uid://bkg6i5dfi5hxt" path="res://scenes/fireball.tscn" id="4_yi3wo"]
 [ext_resource type="PackedScene" uid="uid://b5qswl48vnu40" path="res://scenes/ghost.tscn" id="5_0ymij"]

@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://br7rkkiyu6xry"]
 
 [ext_resource type="Script" uid="uid://cspdhcbbb8wfx" path="res://scripts/start.gd" id="1_jaeev"]
-[ext_resource type="Texture2D" uid="uid://02605xeleu7p" path="res://recouces/assets/clouds.png" id="2_0auqf"]
-[ext_resource type="Texture2D" uid="uid://0haqapp6jd2v" path="res://recouces/assets/town.png" id="3_y16t7"]
-[ext_resource type="FontFile" uid="uid://bmmvol7yj8bh0" path="res://recouces/fonts/DungeonFont.ttf" id="4_4ge6i"]
-[ext_resource type="FontFile" uid="uid://bal6o2dt534cu" path="res://recouces/fonts/BECKETT_.TTF" id="5_8itgj"]
+[ext_resource type="Texture2D" uid="uid://02605xeleu7p" path="res://resources/assets/clouds.png" id="2_0auqf"]
+[ext_resource type="Texture2D" uid="uid://0haqapp6jd2v" path="res://resources/assets/town.png" id="3_y16t7"]
+[ext_resource type="FontFile" uid="uid://bmmvol7yj8bh0" path="res://resources/fonts/DungeonFont.ttf" id="4_4ge6i"]
+[ext_resource type="FontFile" uid="uid://bal6o2dt534cu" path="res://resources/fonts/BECKETT_.TTF" id="5_8itgj"]
 
 [node name="start" type="CanvasLayer"]
 script = ExtResource("1_jaeev")
