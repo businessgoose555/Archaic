@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://beydt4dluu8d5"]
 
-[ext_resource type="Texture2D" uid="uid://bi4okkm45vnew" path="res://recouces/Retro Inventory/inventory_frame.png" id="1_c7w7p"]
+[ext_resource type="Texture2D" uid="uid://bi4okkm45vnew" path="res://resources/Retro Inventory/inventory_frame.png" id="1_c7w7p"]
 [ext_resource type="Script" uid="uid://dywfuhc5mpd7m" path="res://scenes/inventory/inventory_slot.gd" id="1_u6pog"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c7w7p"]

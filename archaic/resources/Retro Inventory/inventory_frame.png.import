@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://baf3g3o2oljyw"
-path="res://.godot/imported/_JumpFallInbetween.png-51b23bb2cb2d3613e142572f93c2e49f.ctex"
+uid="uid://bi4okkm45vnew"
+path="res://.godot/imported/inventory_frame.png-46c85aa40d60fd88bb1e5a057238fdff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://recouces/assets/spritesheets/knight/_JumpFallInbetween.png"
-dest_files=["res://.godot/imported/_JumpFallInbetween.png-51b23bb2cb2d3613e142572f93c2e49f.ctex"]
+source_file="res://resources/Retro Inventory/inventory_frame.png"
+dest_files=["res://.godot/imported/inventory_frame.png-46c85aa40d60fd88bb1e5a057238fdff.ctex"]
 
 [params]
 
